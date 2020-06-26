@@ -7,4 +7,12 @@ import androidx.lifecycle.ViewModel
  */
 class TrendingViewModel :ViewModel(){
 
+
+
+
+
+
+    override fun onCleared() {
+        super.onCleared()
+    }
 }
