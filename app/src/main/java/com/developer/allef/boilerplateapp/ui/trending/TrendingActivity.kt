@@ -12,7 +12,9 @@ class TrendingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_trending)
 
-        trendingViewModel.getTopRepositories()
+        val nameTec = intent.extras?.getString("name","")
+
+        nameTec?.let { trendingViewModel.getTopRepositories(it) }
 
     }
 }

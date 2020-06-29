@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 /**
  * @author allef.santos on 26/06/20
  */
-class Owner (
+data class Owner (
     val avatarUrl: String,
     val eventsUrl: String,
     val followersUrl: String,

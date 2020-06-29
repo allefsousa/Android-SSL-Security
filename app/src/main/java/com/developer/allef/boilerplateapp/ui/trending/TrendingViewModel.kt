@@ -13,9 +13,9 @@ import kotlinx.coroutines.launch
 class TrendingViewModel(private val repository: TrendingRepository) :ViewModel(){
 
 
-    fun getTopRepositories(){
+    fun getTopRepositories(nameTec: String) {
         viewModelScope.launch {
-            val result = repository.getTrendingRepositories("Java")
+            val result = repository.getTrendingRepositories(nameTec)
             when(result){
                 is StateResult.Success ->
                     Log.d("Allef"," Sucesso- ${result.data}")

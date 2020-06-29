@@ -1,5 +1,5 @@
 ext {
-    minSDK = 19
+    minSDK = 21
     targetSDK = 29
     compileSDK = 29
     buildTools = '29.0.2'

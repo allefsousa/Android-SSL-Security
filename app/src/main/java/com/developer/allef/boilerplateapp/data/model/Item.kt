@@ -1,8 +1,5 @@
 package com.developer.allef.boilerplateapp.data.model
 
-import com.developer.allef.boilerplateapp.data.dto.LicenseDTO
-import com.developer.allef.boilerplateapp.data.dto.OwnerDTO
-import com.google.gson.annotations.SerializedName
 
 /**
  * @author allef.santos on 26/06/20
@@ -41,7 +38,6 @@ data class Item (
     val hasPages: Boolean,
     val hasProjects: Boolean,
     val hasWiki: Boolean,
-    val homepage: String,
     val hooksUrl: String,
     val htmlUrl: String,
     val id: Int,
@@ -50,12 +46,9 @@ data class Item (
     val issuesUrl: String,
     val keysUrl: String,
     val labelsUrl: String,
-    val language: String,
     val languagesUrl: String,
-    val license: License,
     val mergesUrl: String,
     val milestonesUrl: String,
-    val mirrorUrl: Any,
     val name: String,
     val nodeId: String,
     val notificationsUrl: String,
@@ -77,7 +70,6 @@ data class Item (
     val svnUrl: String,
     val tagsUrl: String,
     val teamsUrl: String,
-    val topics: List<String>,
     val treesUrl: String,
     val updatedAt: String,
     val url: String,

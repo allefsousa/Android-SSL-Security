@@ -9,6 +9,4 @@ data class Repositories(
     val statusResult: Boolean,
     val repositories: List<Item>,
     val totalCount: Int
-){
-
-}
+)
