@@ -40,10 +40,10 @@ class LanguageActivity : AppCompatActivity() {
     }
 
     private fun loadImages() {
-        image_android.loadImage("")
-        image_flutter.loadImage("")
-        image_java.loadImage("")
-        image_kotlin.loadImage("")
+        image_android.loadImage(this,R.drawable.android)
+        image_flutter.loadImage(this,R.drawable.flutter)
+        image_java.loadImage(this,R.drawable.java)
+        image_kotlin.loadImage(this,R.drawable.download)
     }
 
     private fun navigateTrending(nameTecnology : String){
