@@ -1,6 +1,7 @@
 package com.developer.allef.boilerplateapp.service
 
 import com.developer.allef.boilerplateapp.data.dto.RepositoriesDTO
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -10,7 +11,7 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("search/repositories")
-    fun findRepositories(@Query("q") name: String): List<RepositoriesDTO>
+    suspend fun findRepositories(@Query("q") name: String): Response<RepositoriesDTO>
 
 
 }

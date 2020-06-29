@@ -8,7 +8,7 @@ import okhttp3.CertificatePinner
  */
 object OkHttpPinnerFactory {
      fun providesPinner(): CertificatePinner = CertificatePinner.Builder()
-        .add(BuildConfig.HOST_NAME, "sha256/71c21791a83adc06c5b86cd493f0c4f51bb58f712df6fe0df0f03cd5e466464e")
+        .add(BuildConfig.HOST_NAME, "sha256/ORtIOYkm5k6Nf2tgAK/uwftKfNhJB3QS0Hs608SiRmE=")
         .build()
 
 }

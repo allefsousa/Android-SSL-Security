@@ -1,6 +1,6 @@
 package br.com.developer.allefsousa.adorofilmes.di.factory
 
-import androidx.multidex.BuildConfig
+import com.developer.allef.boilerplateapp.BuildConfig
 import okhttp3.logging.HttpLoggingInterceptor
 
 /**

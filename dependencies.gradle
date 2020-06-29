@@ -15,10 +15,10 @@ ext {
     androidLegacy = "1.0.0"
     koin = "2.0.1"
     nav_version = '2.1.0-beta02'
-    retrofit_version = '2.5.0'
+    retrofit_version = '2.8.1'
     okhttp_version = '3.12.0'
     okhttp_version_loggin = '3.12.0'
-    gson_version = '2.3.0'
+    gson_version = '2.8.1'
     logging_version = '3.4.1'
     lifecycle_version = "2.0.0"
     glide = '4.9.0'
@@ -73,6 +73,8 @@ ext {
             lifecycleExtensions: [group: 'androidx.lifecycle', name: 'lifecycle-extensions', version: lifecycle_version],
             lottie             : [group: 'com.airbnb.android', name: 'lottie', version: lottie],
             koin               : [group: 'org.koin', name: 'koin-android', version: koin],
+            koinScope          : [group: 'org.koin', name: 'koin-androidx-scope', version: koin],
+            koinViewModel      : [group: 'org.koin', name: 'koin-androidx-viewmodel', version: koin],
             navfragment        : [group: 'androidx.navigation', name: 'navigation-fragment-ktx', version: nav_version],
             navUI              : [group: 'androidx.navigation', name: 'navigation-ui-ktx', version: nav_version],
             transitions        : [group: 'androidx.transition', name: 'transition', version: transitions],
@@ -142,6 +144,8 @@ ext {
             [configuration: "implementation", dependency: foundationDependencies.lifecycleExtensions],
             [configuration: "implementation", dependency: foundationDependencies.lottie],
             [configuration: "implementation", dependency: foundationDependencies.koin],
+            [configuration: "implementation", dependency: foundationDependencies.koinViewModel],
+            [configuration: "implementation", dependency: foundationDependencies.koinScope],
             [configuration: "implementation", dependency: foundationDependencies.navfragment],
             [configuration: "implementation", dependency: foundationDependencies.navUI],
             [configuration: "implementation", dependency: foundationDependencies.transitions],
